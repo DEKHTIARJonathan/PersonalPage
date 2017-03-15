@@ -1,1121 +1,1470 @@
-<?php
-header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-header("Cache-Control: post-check=0, pre-check=0", false);
-header("Pragma: no-cache");
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-	<meta content="width=device-width, initial-scale=1" name="viewport"><!-- Page title -->
-	<title>Jonathan DEKHTIAR - Resume / CV</title><!-- /Page title -->
-	<!-- CSS Files
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Page title -->
+  <title>Jonathan DEKHTIAR - Resume / CV</title>
+  <!-- /Page title -->
+
+  <!-- CSS Files
   ========================================================= -->
-	<!-- Google web fonts - Open Sans -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'><!-- /Google web fonts -->
-	<!-- Bootstrap CSS -->
-	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"><!-- /Bootstrap CSS -->
-	<!-- Font Awesome -->
-	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"><!-- /Font Awesome -->
-	<!-- Nivo Lightbox -->
-	<link href="vendor/nivo-lightbox/nivo-lightbox.css" rel="stylesheet">
-	<link href="vendor/nivo-lightbox/themes/default/default.css" rel="stylesheet" type="text/css"><!-- /Nivo Lightbox -->
-	<!-- Animate CSS -->
-	<link href="vendor/animate.css" rel="stylesheet"><!-- /Animate CSS -->
-	<!-- Theme Styles -->
-	<link href="css/styles.css" rel="stylesheet">
-	<!--<link href="css/theme-builder.css" rel="stylesheet">-->
-	<link href="css/theme.css" rel="stylesheet">
-	<!-- Theme Styles -->
-	<!-- / CSS Files
+  <!-- Google web fonts - Open Sans -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <!-- /Google web fonts -->
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- /Bootstrap CSS -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- /Font Awesome -->
+  <!-- Nivo Lightbox -->
+  <link href="vendor/nivo-lightbox/nivo-lightbox.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/nivo-lightbox/themes/default/default.css" type="text/css" /> 
+  <!-- /Nivo Lightbox -->
+  <!-- Animate CSS -->
+  <link href="vendor/animate.css" rel="stylesheet">
+  <!-- /Animate CSS -->
+  <!-- Theme Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+  <!--<link href="css/theme-builder.css" rel="stylesheet">-->
+  <!-- Theme Styles -->
+  <!-- / CSS Files
   ========================================================= -->
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-	<!-- Favicon and Touch Icons
+
+  <!-- Favicon and Touch Icons
   ========================================================= -->
-	<link href="favicon-vertica.ico" rel="shortcut icon" type="image/x-icon">
-	<link href="favicon-vertica.ico" rel="icon" type="image/x-icon">
-	<link href="apple-touch-icon-144.png" rel="apple-touch-icon-precomposed" sizes="144x144">
-	<link href="apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
-	<link href="apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
-	<link href="apple-touch-icon-57.png" rel="apple-touch-icon-precomposed"><!-- /Favicon
+  <link rel="shortcut icon" href="favicon-vertica.ico" type="image/x-icon">
+  <link rel="icon" href="favicon-vertica.ico" type="image/x-icon">
+  <link href="apple-touch-icon-144.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+  <link href="apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+  <link href="apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+  <link href="apple-touch-icon-57.png" rel="apple-touch-icon-precomposed">
+  <!-- /Favicon
   ========================================================= -->
 </head>
+
 <body data-spy="scroll" data-target="#side-menu">
-	<!-- Page Loader
-========================================================= -->
-	<div class="loader" id="page-loader">
-		<div class="loading-wrapper">
-			<div class="tp-loader spinner"></div><!-- Edit With Your Name -->
-			<div class="side-menu-name">
-				Jonathan <strong>DEKHTIAR</strong>
-			</div><!-- /Edit With Your Name -->
-			<!-- Edit With Your Job -->
-			<p class="side-menu-job">Engineer / Data Scientist</p><!-- /Edit With Your Job -->
-		</div>
-	</div><!-- /End of Page loader
-========================================================= -->
-	<!-- SIDE MENU
-========================================================= -->
-	<div class="side-menu-open hidden-sm hidden-xs">
-		<!-- Menu-button -->
-		<a class="btn btn-default side-menu-button" href="#"><i class="fa fa-bars"></i> MENU</a> <!-- /menu-button -->
-	</div><!-- Side Menu container -->
-	<div class="side-menu">
-		<!-- close button -->
-		<span id="side-menu-close"><i class="fa fa-times"></i></span> <!-- /close button -->
-		 <!-- Menu header -->
-		<div class="side-menu-name">
-			<!-- edit with your name -->
-			Jonathan <strong>DEKHTIAR</strong> <!-- /edit with your name -->
-		</div><!-- edit with your Job -->
-		<p class="side-menu-job">Engineer / Data Scientist</p><!-- /edit with your job -->
-		<!-- /Menu Header -->
-		<!-- Main Navigation -->
-		<nav class="side-menu-este" id="side-menu">
-			<ul class="nav side-menu-nav">
-				<li>
-					<a href="#intro"><i class="fa fa-angle-right"></i> Intro</a>
-				</li>
-				<li>
-					<a href="#education"><i class="fa fa-angle-right"></i> Education</a>
-				</li>
-				<li>
-					<a href="#works"><i class="fa fa-angle-right"></i> Work Experience</a>
-				</li>
-				<li>
-					<a href="#skills"><i class="fa fa-angle-right"></i> Skills</a>
-				</li>
-				<li>
-					<a href="#interests"><i class="fa fa-angle-right"></i> Interests</a>
-				</li><!-- <li><a href="#portfolio"><i class="fa fa-angle-right"></i> Portfolio</a></li> -->
-				<li>
-					<a href="#contact"><i class="fa fa-angle-right"></i> Contact</a>
-				</li>
-			</ul>
-		</nav><!-- /Main Navigation-->
-		<!-- Other Buttons -->
-		<div class="side-menu-buttons">
-			<a class="btn btn-side-menu" href="files/DEKHTIAR-Jonathan-CV-French.pdf" target="_blank"><i class="fa fa-download"></i> Download my resume - French</a> <a class="btn btn-side-menu" href="files/DEKHTIAR-Jonathan-CV-English.pdf" target="_blank"><i class="fa fa-download"></i> Download my resume - English</a> <a class="btn btn-side-menu" href="#contact"><i class="fa fa-envelope-o"></i> Send me a message</a>
-		</div><!-- /Other Buttons-->
-	</div><!-- /side menu container -->
-	<!-- /SIDE MENU
-========================================================= -->
-	<!-- CONTENT
-========================================================= -->
-	<section class="container animated" id="content-body">
-		<div class="row" id="intro">
-			<!-- Header Colors -->
-			<div class="col-md-10 col-sm-10 col-md-offset-2 col-sm-offset-1 clearfix top-colors">
-				<div class="top-color top-color1"></div>
-				<div class="top-color top-color2"></div>
-				<div class="top-color top-color3"></div>
-				<div class="top-color top-color1"></div>
-				<div class="top-color top-color2"></div>
-			</div><!-- /Header Colors --><!-- Beginning of Content -->
-			<div class="col-md-10 col-sm-10 col-md-offset-2 col-sm-offset-1 resume-container">
-				<!-- Header Buttons -->
-				<div class="row">
-					<div class="header-buttons col-md-10 col-md-offset-1">
-						<!-- Download Resume Button -->
-						<a class="btn btn-default btn-top-resume" href="files/DEKHTIAR-Jonathan-CV-English.pdf" target="_blank"><i class="fa fa-download"></i><span class="btn-hide-text">Download my resume</span></a> <!-- /Download Resume Button -->
-						 <!-- Mail Button -->
-						 <a class="btn btn-default btn-top-message" href="mailto:contact@jonathandekhtiar.eu" target="_blank"><i class="fa fa-envelope-o"></i><span class="btn-hide-text">Send me a message</span></a> <!-- /Mail Button -->
-					</div>
-				</div><!-- /Header Buttons -->
-				<!-- =============== PROFILE INTRO ====================-->
-				<div class="profile-intro row">
-					<!-- Left Collum with Avatar pic -->
-					<div class="col-md-4 profile-col">
-						<!-- Avatar pic -->
-						<div class="profile-pic">
-							<div class="profile-border">
-								<!-- Put your picture here ( 308px by 308px for retina display)-->
-								<img alt="" src="img/avatar.jpg"> <!-- /Put your picture here -->
-							</div>
-						</div><!-- /Avatar pic -->
-					</div><!-- /Left columm with avatar pic -->
-					<!-- Right Columm -->
-					<div class="col-md-7">
-						<!-- Welcome Title-->
-						<h1 class="intro-title1">Hi, I'm <span class="color1 bold">Jonathan DEKHTIAR</span></h1><!-- /Welcome Title -->
-						<!-- Job - -->
-						<h2 class="intro-title2">Engineer / Data Scientist</h2><!-- /job -->
-						<!-- Description -->
-						<p style="text-align: justify;text-justify: inter-word;">I am a French 24 years old <b>Engineer & PhD Student</b>. I study at the <b>University of Technology of Compiègne : <a href="http://www.utc.fr/">www.utc.fr</a></b><br>
-						<br>
-						After <b>two Erasmus</b>, one in Vienna and another one in Hamburg, a Ph.D in an International Context appears to me as the natural follow-up to the studies I have undertaken so far.<br>
-						<br>
-						I speak <b>fluent English</b> and have an <b>academic knowledge in German</b>.<br>
-						<br>
-						My engineering studies and my work experiences enabled me to discover the <b>fascinating world of Data Analysis</b>. In that sense, it’s logical to me to realize a PhD to keep on discovering this subject and having the opportunity to go in depth with a research subject.<br>
-						<br>
-						Feel free to contact me for any project.</p>
-						<p><!-- /Description --></p>
-					</div><!-- /Right Collum -->
-				</div><!-- ============  /PROFILE INTRO ================= -->
-				<!-- ============  TIMELINE ================= -->
-				<div class="timeline-wrap">
-					<div class="timeline-bg">
-						<!-- ====>> SECTION: PROFILE INFOS <<====-->
-						<section class="timeline profile-infos">
-							<!-- VERTICAL MARGIN (necessary for the timeline effect) -->
-							<div class="line row timeline-margin">
-								<div class="content-wrap">
-									<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-									<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
-									<div class="col-md-9 bg1 full-height"></div>
-								</div>
-							</div><!-- /VERTICAL MARGIN -->
-							<!-- SECTION TITLE -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<!-- Section title -->
-									<h2 class="section-title">Profile</h2><!-- /Section title -->
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- / Margin Collum-->
-							</div><!-- /SECTION TITLE -->
-							<!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content">
-										<!-- Subtitle -->
-										<h3 class="section-item-title-1">Full Name</h3><!-- /Subtitle -->
-										<!-- content -->
-										<p>Jonathan DEKHTIAR</p><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM -->
-							<!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content">
-										<!-- Subtitle -->
-										<h3 class="section-item-title-1">Born</h3><!-- /Subtitle -->
-										<!-- content -->
-										<p>16 February 1991 - Toulouse, FRANCE</p><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM --><!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content">
-										<!-- Subtitle -->
-										<h3 class="section-item-title-1">Email</h3><!-- /Subtitle -->
-										<!-- content -->
-										<p>contact@jonathandekhtiar.eu</p><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collums -->
-							</div><!-- /SECTION ITEM --><!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point"></div><!-- Margin Collums (necessary for the timeline effect) -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content">
-										<!-- Subtitle -->
-										<h3 class="section-item-title-1">Find Me On</h3><!-- /Subtitle -->
-										<!-- content -->
-										<a class="btn btn-default" href="https://twitter.com/born2data"><i class="fa fa-twitter"></i></a> <a class="btn btn-default" href="https://fr.linkedin.com/in/jonathandekhtiar/"><i class="fa fa-linkedin"></i></a> <a class="btn btn-default" href="https://www.dataradar.io:"><i class="fa fa-rss"></i></a> <a class="btn btn-default" href="https://github.com/DekhtiarJonathan/"><i class="fa fa-github-square"></i></a> <a class="btn btn-default" href="http://www.ruskistudio.com"><i class="fa fa-camera"></i></a> <!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum -->
-							</div><!-- /SECTION ITEM -->
-						</section><!-- ==>> /SECTION: PROFILE INFOS --><!-- ====>> SECTION: EDUCATION <<====-->
-						<section class="timeline education" id="education">
-							<!-- Margin (necessary for the timeline effect) -->
-							<div class="line row timeline-margin">
-								<div class="content-wrap">
-									<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-									<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
-									<div class="col-md-9 bg1 full-height"></div>
-								</div>
-							</div><!-- /Margin -->
-							<!-- SECTION TITLE -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<!-- Section title -->
-									<h2 class="section-title">Education</h2><!-- /Section title -->
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION TITLE -->
-							<!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content line-content-education">
-										<!-- Graduation title -->
-										<h3 class="section-item-title-1">PhD in Mechanical Reverse Engineering, Data Analysis and Computer Vision</h3><!-- /Graduation title -->
-										<!-- Graduation time -->
-										<h4 class="graduation-time"><i class="fa fa-university"></i>University of Technology of Compiegne - <span class="graduation-date">Autumn 2015 - Autumn 2018 (Expected Graduation)</span></h4><!-- /Graduation time -->
-										<!-- content -->
-										<div class="graduation-description">
-											<p style="text-align: justify;text-justify: inter-word;"><b>Thesis directors :</b> <a href="https://www.linkedin.com/pub/alexandre-durupt/58/bb9/743">Alexandre DURUPT</a> (<a href="http://www.utc.fr/~duruptal/">UTC</a>) and <a href="https://ch.linkedin.com/pub/dimitris-kiritsis/0/24/71/fr">Dimitris KIRITSIS</a> (<a href="http://people.epfl.ch/dimitris.kiritsis?lang=fr">EPFL</a>).<br>
-											<b>Co-Supervisor :</b> <a href="https://www.linkedin.com/in/matthieubricogne">Matthieu Bricogne</a> (<a href="http://www.utc.fr/~mbricogn/">UTC</a>)<br>
-											<br>
-											<b>PhD Subject :</b> Heterogeneous Data Integration for Large Mechanical Assemblies' Digital MockUps in PLM Context.</p>
-										</div><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum -->
-							</div><!-- /SECTION ITEM -->
-							<!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content line-content-education">
-										<!-- Graduation title -->
-										<h3 class="section-item-title-1">Engineering Master in Computer and Data Science</h3><!-- /Graduation title -->
-										<!-- Graduation time -->
-										<h4 class="graduation-time"><i class="fa fa-university"></i>University of Technology of Compiegne - <span class="graduation-date">September 2010 - July 2015</span></h4><!-- /Graduation time -->
-										<!-- content -->
-										<div class="graduation-description">
-											<p style="text-align: justify;text-justify: inter-word;">Since the end of High School, I’ve been studying at the <a href="https://www.utc.fr/formation_training/computer-science.php">UTC (Technical University of Compiegne)</a>.<br>
-											<br>
-											Since September 2012 I have chosen my major in <b>Computer Sciences</b>.<br>
-											Finally in September 2013, I specialized my studies in the field of <b>Data Mining and Statistical Analysis</b>.</p>
-										</div><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum -->
-							</div><!-- /SECTION ITEM --><!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content line-content-education">
-										<!-- Graduation title -->
-										<h3 class="section-item-title-1">TOEIC : 975/990</h3><!-- /Graduation title -->
-										<!-- Graduation time -->
-										<h4 class="graduation-time"><i class="fa fa-university"></i>Test of English for International Communication - <span class="graduation-date">January 2015</span></h4><!-- /Graduation time -->
-										<!-- content -->
-										<div class="graduation-description">
-											<p style="text-align: justify;text-justify: inter-word;">Developped and organized by the US-based company : <a href="https://www.etsglobal.org/Fr/Fre">ETS</a>, the TOEIC Listening and Reading Test is a two-hour multiple-choice test consisting of 200 questions evenly divided into listening comprehension and reading comprehension. Each candidate receives independent scores for listening and reading comprehension on a scale from 5 to 495 points. The total score adds up to a scale from 10 to 990 points.<br>
-											<br>
-											<b>A Score of 975 corresponds to a C1 Level in the European Scale.</b></p>
-										</div><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum -->
-							</div><!-- /SECTION ITEM --><!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content line-content-education">
-										<!-- Graduation title -->
-										<h3 class="section-item-title-1">Erasmus in Hamburg</h3><!-- /Graduation title -->
-										<!-- Graduation time -->
-										<h4 class="graduation-time"><i class="fa fa-university"></i> Technische Universität Hamburg Harburg - <span class="graduation-date">April 2014 to July 2014</span></h4><!-- /Graduation time -->
-										<!-- content -->
-										<div class="graduation-description">
-											<p style="text-align: justify;text-justify: inter-word;">I have been studying for one semester at the well-known <a href="http://www.tuhh.de/alt/tuhh/startpage.html">Technische Universität Hamburg Harburg</a>.<br>
-											<br>
-											I have taken courses relative to: <b></b></p>
-											<ul style="margin-left:40px">
-												<li><b>Machine Learning</b></li>
-												<li><b>Data Mining</b></li>
-												<li><b>Architecture of Database Systems</b></li>
-												<li><b>Computer Security</b></li>
-												<li><b>Business Continuity: Application & Network Security</b></li>
-												<li><b>IT Security Risk Managemen</b></li>
-											</ul><br>
-											I’ve also followed a seminar related to the Security of <b>Brain-Computer-Interfaces</b>.
-											<p></p>
-										</div><!-- /Content -->
-									</div>
-								</div><!--/Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM --><!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content line-content-education">
-										<!-- Graduation title -->
-										<h3 class="section-item-title-1">Erasmus in Vienna</h3><!-- /Graduation title -->
-										<!-- Graduation time -->
-										<h4 class="graduation-time"><i class="fa fa-university"></i>Technische Universität Wien - <span class="graduation-date">February 2012 to June 2012</span></h4><!-- /Graduation time -->
-										<!-- content -->
-										<div class="graduation-description">
-											<p style="text-align: justify;text-justify: inter-word;">I have been studying for one semester at the well-known <a href="http://www.tuhh.de/alt/tuhh/startpage.html">Technische Universität Hamburg Harburg</a>.<br>
-											<br>
-											I have taken courses relative to: <b></b></p>
-											<ul style="margin-left:40px">
-												<li><b>Object Oriented Programming</b></li>
-												<li><b>IT Security</b></li>
-												<li><b>Statistical Analisys</b></li>
-												<li><b>Mathematical Modeling</b></li>
-												<li><b>Database design</b></li>
-											</ul><br>
-											I’ve also followed a seminar related to the Security of <b>Brain-Computer-Interfaces</b>.
-											<p></p>
-										</div><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM -->
-						</section><!-- ==>> /SECTION: EDUCATION <<==== --><!-- ====>> SECTION: WORK EXPERIENCE <<====-->
-						<section class="timeline work-experience" id="works">
-							<!-- VERTICAL MARGIN (necessary for the timeline effect) -->
-							<div class="line row timeline-margin">
-								<div class="content-wrap">
-									<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-									<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
-									<div class="col-md-9 bg1 full-height"></div>
-								</div>
-							</div><!-- /VERTICAL MARGIN -->
-							<!-- SECTION TITLE -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<!-- Section title -->
-									<h2 class="section-title">Work Experience</h2><!-- /Section title -->
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION TITLE -->
-							<!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content line-content-education">
-										<!-- Work Place -->
-										<h3 class="section-item-title-1"><a href="http://www.deltacad.fr/">DeltaCAD</a></h3><!-- /work place -->
-										<!-- Graduation time -->
-										<h4 class="job"><i class="fa fa-flag"></i> Data Scientist and C++/Python Developer <span class="job-date">February 2015 - July 2015</span></h4><!-- /Graduation time -->
-										<!-- content -->
-										<div class="job-description">
-											<p style="text-align: justify;text-justify: inter-word;">I have done a 6 months Internship inside the company DeltaCAD under the supervision of <a href="https://www.researchgate.net/profile/Harvey_Rowson">Harvey ROWSON</a>.<br>
-											<br>
-											I have designed and developed an application to perform mechanical parts recognition and segmentation. The C++ core is exposed via a Python Web API hosted on AWS (Amazon Cloud)<br>
-											<br>
-											For this sake, I have benchmarked the major learning alogirthm and and boosting techniques, combinated with a brief state of the art in geometrical feature recognition.</p>
-										</div><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM -->
-							<!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content line-content-education">
-										<!-- Work Place -->
-										<h3 class="section-item-title-1"><a href="http://www.tedxutcompiegne.com/">TEDxUTCompiegne</a></h3><!-- /work place -->
-										<!-- Graduation time -->
-										<h4 class="job"><i class="fa fa-flag"></i> Founder, Head of the Organization and TEDx Licence Owner - <span class="job-date">September 2014 - February 2015</span></h4><!-- /Graduation time -->
-										<!-- content -->
-										<div class="job-description">
-											<p style="text-align: justify;text-justify: inter-word;">Nowadays an engineering student at the <a href="http://www.utc.fr/">UTC</a>, tomorrow the core of innovation and creativity. It's high time to act in order to shape the world and not just to cope with it. My engineering background relies not only on scientific topics but also on open-mindedness and assumption of responsibility. With the aim of bringing to the future engineers the keys to the great social and technological challenges, we have built <b>TEDxUTCompiegne</b>, and the first event took place on the <b>Tuesday January, 20th 2015</b>.<br>
-											<br>
-											Photos : <a href="https://www.flickr.com/photos/129131048@N03/sets/72157650481514435/" target="_blank">Album Flickr</a><br>
-											Videos : <a href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rMgciAYrOqrzKmpL_sqyU_e" target="_blank">Playlist Youtube - TEDxUTCompiègne - January 20, 2015</a><br>
-											<br>
-											<b>Our thema : “Observing, Imaginating, Achieving”.</b><br>
-											<br>
-											Three actions verbs that together describe the innovation process. Three action verbs that reflect a willingness to act and understand. Three verbs that lead my way. No other thema could have transmit better my determination to engage myself in the social and technological challenges of tomorrow.<br>
-											<br>
-											Speakers :</p>
-											<ul style="margin-left:40px">
-												<li>
-													<a href="https://fr.linkedin.com/pub/antoine-herlin/45/212/740">Antoine HERLIN</a> (<a href="http://www.cardiologs.com/">CardioLogs</a>)
-												</li>
-												<li>
-													<a href="https://fr.linkedin.com/pub/jean-pascal-foucault/20/76b/521">Jean Pascal FOUCAULT</a> (<a href="http://www.tbmaestro.com/">tbmaestro</a>)
-												</li>
-												<li>
-													<a href="https://fr.linkedin.com/pub/alexandre-durupt/58/bb9/743">Alexandre DURUPT</a> (<a href="http://dimexp.utc.fr">DiMEXP</a> et <a href="http://www.utc.fr">UTC</a>)
-												</li>
-												<li>
-													<a href="https://fr.linkedin.com/pub/c%C3%A9cile-monteil/89/4b/76b/fr">Cecile MONTEIL</a> (<a href="http://www.adscientiam.fr/">Ad Scientiam</a>)
-												</li>
-												<li>
-													<a href="https://twitter.com/samgoeta">Samuel GOËTA</a> (<a href="http://fr.okfn.org/">Open Knowledge F. France</a>)
-												</li>
-												<li>
-													<a href="https://fr.linkedin.com/pub/jacques-pateau/15/391/16b">Jacques PATEAU</a> (<a href="http://www.pateauconsultants.com/">PateauConsultants</a>)
-												</li>
-												<li>
-													<a href="https://fr.linkedin.com/in/jmlazard/fr">Jean Marc LAZARD</a> (<a href="http://www.opendatasoft.com/">OpenDataSoft</a>)
-												</li>
-											</ul><br>
-											<br>
-											<b>My Work :</b><br>
-											During the project, I managed and coordinated a team of 13 people, set up the meeting agendas and the objectives.<br>
-											I actively participated in the Speakers selection process. I organized the team to meet the required deadlines and solved the logistical problems.<br>
-											<br>
-											Feel free to ask me anything about this fantastic adventure.
-											<p></p>
-										</div><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM -->
-							<!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content line-content-education">
-										<!-- Work Place -->
-										<h3 class="section-item-title-1"><a href="http://www.valeo.com/">Valeo</a></h3><!-- /work place -->
-										<!-- Graduation time -->
-										<h4 class="job"><i class="fa fa-flag"></i> Business Automation Analyst - <span class="job-date">September 2013 - February 2014</span></h4><!-- /Graduation time -->
-										<!-- content -->
-										<div class="job-description">
-											<p style="text-align: justify;text-justify: inter-word;">I have done a 6 months Internship inside the Information System Shared Service of Valeo Confort and Driving Assistance under the supervision of <a href="https://fr.linkedin.com/pub/marc-laurent/25/110/b43">Marc Laurent</a>.<br>
-											<br>
-											I have elaborate and maintained Business Workflow Applications in the Cloud Platform :<br>
-											<a href="http://www.opentext.com/">Cordys Process Factory</a>.<br>
-											<br>
-											In order to prepare a SAP migration, I have developed a tool to clean the data from the SD Module. The tool was a developed in VBA in Excel and performed a Statistical Analysis on clients’ data from our own system from to those in the global SAP system. The goal was to match the clients of the two systems and identify those who didn’t exist in the global system and needed to be created.</p>
-										</div><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM -->
-							<!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content line-content-education">
-										<!-- Work Place -->
-										<h3 class="section-item-title-1"><a href="http://www.erems.fr/">Erems</a></h3><!-- /work place -->
-										<!-- Graduation time -->
-										<h4 class="job"><i class="fa fa-flag"></i> Web Developer - <span class="job-date">January 2013 - February 2013</span></h4><!-- /Graduation time -->
-										<!-- content -->
-										<div class="job-description">
-											<p style="text-align: justify;text-justify: inter-word;">Front End developer of an administration tool.<br>
-											The goal was to allow long term planning of all the projects with color flagging for the different priorities. The output is printed every week in PDF automatically generated.<br>
-											<br>
-											Language used : <b>Javascript / Jquery / PHP / HTML5 / CSS</b></p>
-										</div><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM --><!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content line-content-education">
-										<!-- Work Place -->
-										<h3 class="section-item-title-1"><a href="http://www.telligo.fr/">Telligo</a></h3><!-- /work place -->
-										<!-- Graduation time -->
-										<h4 class="job"><i class="fa fa-flag"></i> Holiday Camp Leader - <span class="job-date">Summer 2009 to Winter 2014</span></h4><!-- /Graduation time -->
-										<!-- content -->
-										<div class="job-description">
-											<p style="text-align: justify;text-justify: inter-word;">Since I turned 17, I have worked as Holiday Camp Leader.<br>
-											<br>
-											The Holiday Camps were mainly Science Oriented and/or Sport Oriented.</p>
-										</div><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM -->
-						</section><!-- ==>> /SECTION: WORK EXPERIENCE <<==== --><!-- ====>> SECTION: SKILLS <<====-->
-						<section class="timeline skills" id="skills">
-							<!-- VERTICAL MARGIN (necessary for the timeline effect) -->
-							<div class="line row timeline-margin">
-								<div class="content-wrap">
-									<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-									<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
-									<div class="col-md-9 bg1 full-height"></div>
-								</div>
-							</div><!-- /VERTICAL MARGIN -->
-							<!-- SECTION TITLE -->
-							<div class="line row">
-								<!-- VERTICAL MARGIN (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div><!-- /VERTICAL MARGIN (necessary for the timeline effect) -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<!-- Section title -->
-									<h2 class="section-title">Skills</h2><!-- /Section title -->
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION TITLE -->
-							<!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point"></div><!-- / Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content">
-										<!-- Subtitle -->
-										<h3 class="section-item-title-1">Professional Skills</h3><!-- /Subtitle -->
-										<!-- content -->
-										<ul class="skills-list">
-											<!-- item-list -->
-											<li>
-												<div class="progress">
-													<div class="progress-bar" data-percent="70%" role="progressbar" style="width: 70%;">
-														<span class="sr-only">70% Complete</span>
-													</div><span class="progress-type">Comunication</span> <span class="progress-completed">70%</span>
-												</div>
-											</li><!-- /item list -->
-											<!-- item-list -->
-											<li>
-												<div class="progress">
-													<div class="progress-bar progress-bar-2" data-percent="90%" role="progressbar" style="width: 90%;">
-														<span class="sr-only">90% Complete</span>
-													</div><span class="progress-type">Leadership</span> <span class="progress-completed">90%</span>
-												</div>
-											</li><!-- /item list -->
-											<!-- item-list -->
-											<li>
-												<div class="progress" title="Doing my best!">
-													<div class="progress-bar progress-bar-3" data-percent="85%" role="progressbar" style="width: 85%;">
-														<span class="sr-only">85% Complete</span>
-													</div><span class="progress-type">Confidence</span> <span class="progress-completed">85%</span>
-												</div>
-											</li><!-- /item list -->
-										</ul><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM -->
-							<!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content">
-										<!-- Subtitle -->
-										<h3 class="section-item-title-1">Hard Skills</h3><!-- /Subtitle -->
-										<!-- content -->
-										<ul class="skills-list">
-											<!-- item-list -->
-											<li>
-												<div class="progress">
-													<div class="progress-bar" data-percent="85%" role="progressbar" style="width: 85%;">
-														<span class="sr-only">85% Complete</span>
-													</div><span class="progress-type">Data Modelisation and Analysis</span> <span class="progress-completed">85%</span>
-												</div>
-											</li><!-- /item list -->
-											<!-- item-list -->
-											<li>
-												<div class="progress">
-													<div class="progress-bar progress-bar-2" data-percent="65%" role="progressbar" style="width: 65%;">
-														<span class="sr-only">65% Complete</span>
-													</div><span class="progress-type">Software & API Design</span> <span class="progress-completed">65%</span>
-												</div>
-											</li><!-- /item list -->
-											<!-- item-list -->
-											<li>
-												<div class="progress">
-													<div class="progress-bar progress-bar-3" data-percent="70%" role="progressbar" style="width: 70%;">
-														<span class="sr-only">70% Complete</span>
-													</div><span class="progress-type">Network Security and Architecture</span> <span class="progress-completed">70%</span>
-												</div>
-											</li><!-- /item list -->
-										</ul><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM --><!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point"></div><!-- /Margin Collums (necessary for the timeline effect) -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content">
-										<!-- Subtitle -->
-										<h3 class="section-item-title-1">Code Skills</h3><!-- /Subtitle -->
-										<!-- content -->
-										<ul class="skills-list">
-											<!-- item-list -->
-											<li>
-												<div class="progress">
-													<div class="progress-bar" data-percent="80%" role="progressbar" style="width: 80%;">
-														<span class="sr-only">80% Complete</span>
-													</div><span class="progress-type">Python</span> <span class="progress-completed">80%</span>
-												</div>
-											</li><!-- /item list -->
-											<!-- item-list -->
-											<li>
-												<div class="progress">
-													<div class="progress-bar progress-bar-2" data-percent="85%" role="progressbar" style="width: 85%;">
-														<span class="sr-only">85% Complete</span>
-													</div><span class="progress-type">C++</span> <span class="progress-completed">85%</span>
-												</div>
-											</li><!-- /item list -->
-											<!-- item-list -->
-											<li>
-												<div class="progress">
-													<div class="progress-bar progress-bar-3" data-percent="65%" role="progressbar" style="width: 65%;">
-														<span class="sr-only">65% Complete</span>
-													</div><span class="progress-type">R</span> <span class="progress-completed">65%</span>
-												</div>
-											</li><!-- /item list -->
-											<!-- item-list -->
-											<li>
-												<div class="progress">
-													<div class="progress-bar progress-bar-4" data-percent="85%" role="progressbar" style="width: 85%;">
-														<span class="sr-only">85% Complete</span>
-													</div><span class="progress-type">SQL / PL SQL</span> <span class="progress-completed">85%</span>
-												</div>
-											</li><!-- /item list -->
-											<!-- item-list -->
-											<li>
-												<div class="progress">
-													<div class="progress-bar progress-bar-5" data-percent="80%" role="progressbar" style="width: 80%;">
-														<span class="sr-only">80% Complete</span>
-													</div><span class="progress-type">HTML / JS / PHP</span> <span class="progress-completed">80%</span>
-												</div>
-											</li><!-- /item list -->
-										</ul><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM -->
-						</section><!-- ==>> /SECTION: SKILLS -->
-						<!-- ====>> SECTION: INTERESTS <<====-->
-						<section class="timeline" id="interests">
-							<!-- VERTICAL MARGIN (necessary for the timeline effect) -->
-							<div class="line row timeline-margin">
-								<div class="content-wrap">
-									<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-									<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
-									<div class="col-md-9 bg1 full-height"></div>
-								</div>
-							</div><!-- /VERTICAL MARGIN -->
-							<!-- SECTION TITLE -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<!-- Section title -->
-									<h2 class="section-title">Interests</h2><!-- /Section title -->
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION TITLE -->
-							<!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content">
-										<!-- Subtitle -->
-										<h3 class="section-item-title-1"><a href="http://www.ruskistudio.com/">Photography</a></h3><!-- /Subtitle -->
-										<!-- content -->
-										<p style="text-align: justify;text-justify: inter-word;">I run my own <b>Photo Business</b> <a href="http://www.ruskistudio.com/">RuskiStudio.com</a> during my spare time.<br>
-										<br>
-										I have a keen interest in:</p>
-										<ul style="margin-left:40px; font-size:14px">
-											<li>Concert Photography</li>
-											<li>Event Photography</li>
-											<li>Fashion Shoots</li>
-											<li>Nature Shots</li>
-											<li>Stock and Business Photography</li>
-											<li>Wedding Photography</li>
-										</ul>
-										<p></p><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM -->
-							<!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content">
-										<!-- Subtitle -->
-										<h3 class="section-item-title-1">Cinema</h3><!-- /Subtitle -->
-										<!-- content -->
-										<p style="text-align: justify;text-justify: inter-word;">As a true fan of Cinema, I watch, at least, two movies a week. I especially appreciate the work of:</p>
-										<ul style="margin-left:40px; font-size:14px">
-											<li>Stanley Kubrick</li>
-											<li>Quentin Tarantino</li>
-											<li>Woody Allen</li>
-											<li>Francis Ford Coppola</li>
-											<li>Guy Ritchie</li>
-											<li>James McTeigue</li>
-											<li>Frank Darabont</li>
-										</ul>
-										<p></p><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM --><!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content">
-										<!-- Subtitle -->
-										<h3 class="section-item-title-1">Music</h3><!-- /Subtitle -->
-										<!-- content -->
-										<p style="text-align: justify;text-justify: inter-word;">It's been around 8 years that I've been introduced to the art of Turntablism and DJing.<br>
-										<br>
-										I mainly listen to:</p>
-										<ul style="margin-left:40px; font-size:14px">
-											<li>Techno</li>
-											<li>Deep House</li>
-											<li>Nu Jazz</li>
-											<li>Jazz</li>
-											<li>Nu Disco</li>
-											<li>Funk</li>
-											<li>80's Rock</li>
-											<li>Reggae</li>
-										</ul>
-										<p></p><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- /Margin Collum-->
-							</div><!-- /SECTION ITEM -->
-						</section><!-- ==>> /SECTION: INTERESTS -->
-						<?php 
-						/*
 
-						           <!-- ====>> SECTION: PORTFOLIO <<====-->
-						          <section class="timeline portfolio" id="portfolio">
-
-						            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
-						            <div class="line row timeline-margin">
-						              <div class="content-wrap">
-						                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-						                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
-						                <div class="col-md-9 bg1 full-height"></div>
-						              </div>
-						            </div>
-						            <!-- /VERTICAL MARGIN -->
-
-						            <!-- SECTION TITLE -->
-						            <div class="line row">
-						              <!-- Margin Collums (necessary for the timeline effect) -->
-						              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-						              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
-						              <!-- /Margin Collums -->
-						              <!-- Item Content -->
-						              <div class="col-md-8 content-wrap bg1">
-						                <!-- Section title -->
-						                <h2 class="section-title">Portfólio</h2>
-						                <!-- /Section title -->
-						              </div>
-						              <!-- Item Content -->
-						              <!-- Margin Collum-->
-						              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-						              <!-- /Margin Collum-->
-						            </div>
-						            <!-- /SECTION TITLE -->
-
-						            <!-- SECTION ITEM -->
-						            <div class="line row">
-						              <!-- Margin Collums (necessary for the timeline effect) -->
-						              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-						              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
-						              <!-- /Margin Collums -->
-						              <!-- Item Content -->
-						              <div class="col-md-8 content-wrap bg1">
-						                <div class="line-content">
-						                  <!-- Subtitle -->
-						                  <h3 class="section-item-title-1">Some Works</h3>
-						                  <!-- /Subtitle -->
-						                  <!-- content -->
-						                  <div class="portfolio-itens clearfix">                      
-						                    <!-- Portfolio item -->
-						                    <div class="portfolio-item">
-						                      <!-- Link to the item image (Put the long description on  "a" title)-->
-						                      <a href="img/portfolio-item1-photo-zoom.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie purus." class="nivobox" data-lightbox-gallery="portfolio">
-						                        <div class="hover">
-						                          <p class="zoomi"><i class="fa fa-search"></i></p>
-						                          <!-- Item short title -->
-						                          <p class="portfolio-item-title"><strong>Some Place</strong><br/> Photography</p>
-						                        </div>
-						                        <div class="hover-bg-wrapper">
-						                          <div class="hover-bg"></div>
-						                        </div>
-						                        <div class="portfolio-item-thumbnail">
-						                          <!-- Thumbnail of the portfolio image (400x360 for retina display) -->
-						                          <img src="img/portfolio-item1-photo-thumb.jpg" alt="">
-						                        </div>                        
-						                      </a>
-						                    </div>
-						                    <!-- /Portfolio item -->  
-
-						                  </div>
-						                  <!-- /Content -->
-						                </div>
-						              </div>
-						              <!-- Item Content -->
-						              <!-- Margin Collum-->
-						              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-						              <!-- /Margin Collum-->
-						            </div>
-						            <!-- /SECTION ITEM -->
-						          </section>
-						          <!-- ==>> /SECTION: PORTFOLIO -->
-
-						*/
-						?>						
-						
-						<!-- ====>> SECTION: CONTACT <<====-->
-						<section class="timeline" id="contact">
-							<!-- VERTICAL MARGIN (necessary for the timeline effect) -->
-							<div class="line row timeline-margin">
-								<div class="content-wrap">
-									<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-									<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
-									<div class="col-md-9 bg1 full-height"></div>
-								</div>
-							</div><!-- /VERTICAL MARGIN -->
-							<!-- SECTION TITLE -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<!-- Section title -->
-									<h2 class="section-title">Keep in Touch</h2><!-- /Section title -->
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- / Margin Collum-->
-							</div><!-- /SECTION TITLE -->
-							<!-- SECTION ITEM -->
-							<div class="line row">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-mail"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content contact-content">
-										<!-- Subtitle -->
-										<h3 class="section-item-title-1">Shoot me a message</h3><!-- /Subtitle -->
-										<!-- content -->
-										<div class="row">
-											<div class="col-md-8 contact-form-wrapper">
-												<!-- Contact form -->
-												<form class="form" id="contactForm" method="post" name="contactForm" role="form">
-													<!-- Form Field -->
-													<div class="form-group">
-														<input class="form-control required" id="name" name="name" placeholder="Name" required="" type="text">
-													</div><!-- /Form Field -->
-													<!-- Form Field -->
-													<div class="form-group">
-														<input class="form-control required" id="email" name="email" placeholder="Email" required="" type="email">
-													</div><!-- /Form Field -->
-													<!-- Form Field -->
-													<div class="form-group">
-														<input class="form-control required" id="subject" name="subject" placeholder="Subject" required="" type="text">
-													</div><!-- /Form Field -->
-													<!-- Form Field -->
-													<div class="form-group">
-														<textarea class="form-control required" id="message" name="message" placeholder="Message" required="" rows="5"></textarea>
-													</div><!-- /Form Field -->
-													<!-- Form Field -->
-													<div class="form-group">
-														<input class="btn btn-default form-send" type="submit" value="Send!">
-													</div><!-- /Form Field -->
-												</form><!-- /Contact Form -->
-											</div><!-- Contact infos -->
-											<div class="col-md-4 contact-infos">
-												<h4 class="contact-subtitle-1">Address</h4>
-												<p>60200 Compiegne</p>
-												<h4 class="contact-subtitle-1">Phone</h4>
-												<p>(+33) 7 70 41 13 84</p>
-												<h4 class="contact-subtitle-1">Mail</h4>
-												<p>contact@jonathandekhtiar.eu</p>
-											</div><!-- /Contact infos -->
-										</div><!-- /Content -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!--/ Margin Collum-->
-							</div><!-- /SECTION ITEM -->
-						</section><!-- ==>> /SECTION: CONTACT -->
-						<!-- ====>> SECTION: THANK YOU <<====-->
-						<section class="timeline profile-infos">
-							<!-- VERTICAL MARGIN (necessary for the timeline effect) -->
-							<div class="line row timeline-margin timeline-margin-big">
-								<div class="content-wrap">
-									<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-									<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
-									<div class="col-md-9 bg1 full-height"></div>
-								</div>
-							</div><!-- /VERTICAL MARGIN -->
-							<!-- SECTION ITEM -->
-							<div class="line row line-thank-you">
-								<!-- Margin Collums (necessary for the timeline effect) -->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
-								<div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point"></div><!-- /Margin Collums -->
-								<!-- Item Content -->
-								<div class="col-md-8 content-wrap bg1">
-									<div class="line-content">
-										<!-- Subtitle -->
-										<h3 class="thank-you">Thank You!</h3><!-- /Subtitle -->
-									</div>
-								</div><!-- /Item Content -->
-								<!-- Margin Collum-->
-								<div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div><!-- / Margin Collum-->
-							</div><!-- /SECTION ITEM -->
-						</section><!-- ==>> /SECTION: PROFILE INFOS -->
-					</div>
-				</div><!-- ============  /TIMELINE ================= -->
-				<!-- ============  FOOTER ================= -->
-				<footer class="row" id="footer">
-					<!-- Put your Quote Here-->
-					<p class="quote">“Now I know, I know we NEVER know!”</p><!-- /Quote -->
-					<!-- Quote Autor -->
-					<p class="author">Jean GABIN</p><!-- /Quote Autor -->
-				</footer><!-- ============  /FOOTER ================= -->
-			</div>
-		</div>
-	</section><!-- /CONTENT
+<!-- Page Loader
 ========================================================= -->
-	<!-- Contact Form - Ajax Messages
+<div class="loader" id="page-loader"> 
+  <div class="loading-wrapper">
+    <div class="tp-loader spinner"></div>
+    <!-- Edit With Your Name -->
+    <div class="side-menu-name">
+      Jonathan <strong>DEKHTIAR</strong>
+    </div>
+    <!-- /Edit With Your Name -->
+    <!-- Edit With Your Job -->
+    <p class="side-menu-job">Engineer / Data Scientist</p>
+    <!-- /Edit With Your Job -->
+  </div>   
+</div>
+<!-- /End of Page loader
 ========================================================= -->
-	<!-- Form Sucess -->
-	<div class="form-result modal-wrap" id="contactSuccess">
-		<div class="modal-bg"></div>
-		<div class="modal-content">
-			<h4 class="modal-title"><i class="fa fa-check-circle"></i> Success!</h4>
-			<p>Your message has been sent to us.</p>
-		</div>
-	</div><!-- /Form Sucess -->
-	<!-- form-error -->
-	<div class="form-result modal-wrap" id="contactError">
-		<div class="modal-bg"></div>
-		<div class="modal-content">
-			<h4 class="modal-title"><i class="fa fa-times"></i> Error</h4>
-			<p>There was an error sending your message.</p>
-		</div>
-	</div><!-- /form-error -->
-	<!-- Contact Form - Ajax Messages
+
+<!-- SIDE MENU
 ========================================================= -->
-	<!-- Javascript Files
+<div class="side-menu-open hidden-sm hidden-xs">
+  <!-- Menu-button -->
+    <a href="#" class="btn btn-default side-menu-button"><i class="fa fa-bars"></i> MENU</a>
+  <!-- /menu-button -->
+</div>
+<!-- Side Menu container -->
+<div class="side-menu">
+  <!-- close button -->
+  <span id="side-menu-close"><i class="fa fa-times"></i></span>
+  <!-- /close button -->
+
+  <!-- Menu header -->
+  <div class="side-menu-name">
+    <!-- edit with your name -->
+    Jonathan <strong>DEKHTIAR</strong>
+    <!-- /edit with your name -->
+  </div>
+  <!-- edit with your Job -->
+  <p class="side-menu-job">Engineer / Data Scientist</p>
+  <!-- /edit with your job -->
+  <!-- /Menu Header -->
+
+  <!-- Main Navigation -->
+  <nav id="side-menu" class="side-menu-este">
+    <ul class="nav side-menu-nav">
+      <li><a href="#intro"><i class="fa fa-angle-right"></i> Intro</a></li>
+      <li><a href="#education"><i class="fa fa-angle-right"></i> Education</a></li>
+      <li><a href="#works"><i class="fa fa-angle-right"></i> Work Experience</a></li>
+      <li><a href="#skills"><i class="fa fa-angle-right"></i> Skills</a></li>
+      <li><a href="#interests"><i class="fa fa-angle-right"></i> Interests</a></li>
+      <!-- <li><a href="#portfolio"><i class="fa fa-angle-right"></i> Portfolio</a></li> -->
+      <li><a href="#contact"><i class="fa fa-angle-right"></i> Contact</a></li>
+    </ul>
+  </nav>
+  <!-- /Main Navigation-->
+
+  <!-- Other Buttons -->
+  <div class="side-menu-buttons">
+    <a href="files/DEKHTIAR-Jonathan-CV-French.pdf" class="btn btn-side-menu" target="_blank"><i class="fa fa-download"></i> Download my resume - French</a>
+    <a href="files/DEKHTIAR-Jonathan-CV-English.pdf" class="btn btn-side-menu" target="_blank"><i class="fa fa-download"></i> Download my resume - English</a>
+    <a href="#contact" class="btn btn-side-menu"><i class="fa fa-envelope-o"></i> Send me a message</a>
+  </div>
+  <!-- /Other Buttons-->
+</div>
+<!-- /side menu container -->
+
+<!-- /SIDE MENU
 ========================================================= -->
-	<!-- jQuery (necessary for plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
-	</script> <!-- /jquery -->
-	<!-- bootstrap -->
-	<script src="vendor/bootstrap/js/bootstrap.min.js">
-	</script> <!-- /bootstrap -->
-	<!-- easing -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js">
-	</script> <!-- /easing -->
-	<!-- jQuery Mousewheel -->
-	<script src="vendor/jquery.mousewheel.min.js">
-	</script> <!-- /jQuery Mousewheel -->
-	<!-- jQuery Mousewheel Smoothscroll -->
-	<script src="vendor/jquery.nicescroll.min.js">
-	</script> 
-	<script src="vendor/jquery.nicescroll.plus.js">
-	</script> <!-- /jQuery Mousewheel Smoothscroll -->
-	<!-- Waypoints (for CSS3 animations) -->
-	<script src="vendor/waypoints.min.js">
-	</script> <!-- /waypoints -->
-	<!-- Modal box-->
-	<script src="vendor/nivo-lightbox/nivo-lightbox.min.js">
-	</script> <!-- /Modal Box -->
-	<!-- Carousel-->
-	<script src="vendor/jquery.bxslider.min.js">
-	</script> <!-- /Carousel -->
-	<!-- Front-end Validator (for forms) -->
-	<script src="vendor/jquery.validate.min.js">
-	</script> <!-- /Front-end Validator -->
-	<!-- placeholder Support for IE -->
-	<script src="vendor/placeholders.jquery.min.js">
-	</script> <!-- /placeholder support -->
-	<!-- Cross-browser -->
-	<script src="js/cross-browser.js">
-	</script> <!-- /Cross-browser -->
-	<!-- Configurations -->
-	<script src="js/main.js">
-	</script> <!-- /Configurations -->
+
+<!-- CONTENT
+========================================================= -->
+<section id="content-body" class="container animated">
+  <div class="row" id="intro">
+
+    <!-- Header Colors -->
+    <div class="col-md-10 col-sm-10  col-md-offset-2 col-sm-offset-1 clearfix top-colors">
+      <div class="top-color top-color1"></div>
+      <div class="top-color top-color2"></div>
+      <div class="top-color top-color3"></div>
+      <div class="top-color top-color1"></div>
+      <div class="top-color top-color2"></div>
+    </div>
+    <!-- /Header Colors -->    
+    
+    <!-- Beginning of Content -->
+    <div class="col-md-10 col-sm-10 col-md-offset-2 col-sm-offset-1 resume-container">
+      
+      <!-- Header Buttons -->
+      <div class="row">
+        <div class="header-buttons col-md-10 col-md-offset-1">
+          <!-- Download Resume Button -->
+          <a href="files/DEKHTIAR-Jonathan-CV-English.pdf" class="btn btn-default btn-top-resume" target="_blank"><i class="fa fa-download"></i><span class="btn-hide-text">Download my resume</span></a>
+          <!-- /Download Resume Button -->
+          <!-- Mail Button -->
+          <a href="mailto:contact@jonathandekhtiar.eu" class="btn btn-default btn-top-message" target="_blank"><i class="fa fa-envelope-o"></i><span class="btn-hide-text">Send me a message</span></a>
+          <!-- /Mail Button -->
+        </div>
+      </div>
+      <!-- /Header Buttons -->
+
+      <!-- =============== PROFILE INTRO ====================-->
+      <div class="profile-intro row">
+        <!-- Left Collum with Avatar pic -->
+        <div class="col-md-4 profile-col">
+          <!-- Avatar pic -->
+          <div class="profile-pic">
+            <div class="profile-border">
+              <!-- Put your picture here ( 308px by 308px for retina display)-->
+              <img src="img/avatar.jpg" alt="">
+              <!-- /Put your picture here -->
+            </div>          
+          </div>
+           <!-- /Avatar pic -->
+        </div>
+        <!-- /Left columm with avatar pic -->
+  
+         <!-- Right Columm -->
+        <div class="col-md-7">
+          <!-- Welcome Title-->
+          <h1 class="intro-title1">Hi, I'm <span class="color1 bold">Jonathan DEKHTIAR!</span></h1>
+          <!-- /Welcome Title -->
+          <!-- Job - -->
+          <h2 class="intro-title2">Engineer / Data Scientist</h2>
+          <!-- /job -->
+          <!-- Description -->
+          <p style="text-align: justify;text-justify: inter-word;">
+          	I am a French 24 years old <b>Engineer & PhD Student</b>. I study at the <b>University of Technology of Compiègne : <a href="http://www.utc.fr/">www.utc.fr</a></b>
+          	</br></br>
+
+          	After <b>two Erasmus</b>, one in Vienna and another one in Hamburg, a Ph.D in an International Context appears to me as the natural follow-up to the studies I have undertaken so far.</b>
+          	</br></br> 
+
+          	I speak <b>fluent English</b> and have an <b>academic knowledge in German</b>.</br></br>
+
+          	My engineering studies and my work experiences enabled me to discover the <b>fascinating world of Data Analysis</b>. In that sense, it’s logical to me to realize a PhD to keep on discovering this subject and having the opportunity to go in depth with a research subject. 
+          	</br></br>
+          	Feel free to contact me for any project.
+          <p>
+
+          <!-- /Description -->
+        </div>
+        <!-- /Right Collum -->
+      </div>
+      <!-- ============  /PROFILE INTRO ================= -->
+      
+      <!-- ============  TIMELINE ================= -->
+      <div class="timeline-wrap">
+        <div class="timeline-bg">
+
+          <!-- ====>> SECTION: PROFILE INFOS <<====-->
+          <section class="timeline profile-infos">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height">
+              </div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Profile</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- / Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1">Full Name</h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <p>Jonathan DEKHTIAR</p>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->
+            
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1">Born</h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <p>16 February 1991 - Toulouse, FRANCE</p>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->   
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1">Email</h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <p>contact@jonathandekhtiar.eu</p>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collums -->
+            </div>
+            <!-- /SECTION ITEM --> 
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1">Find Me On</h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <a href="https://twitter.com/born2data" class="btn btn-default"><i class="fa fa-twitter"></i></a>
+                  <a href="https://fr.linkedin.com/in/jonathandekhtiar/" class="btn btn-default"><i class="fa fa-linkedin"></i></a>
+                  <a href="https://www.dataradar.io:" class="btn btn-default"><i class="fa fa-rss"></i></a>
+                  <a href="https://github.com/DekhtiarJonathan/" class="btn btn-default"><i class="fa fa-github-square"></i></a>
+                  <a href="http://www.ruskistudio.com" class="btn btn-default"><i class="fa fa-camera"></i></a>
+                  
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum -->
+            </div>
+            <!-- /SECTION ITEM --> 
+          </section>
+          <!-- ==>> /SECTION: PROFILE INFOS -->     
+
+          <!-- ====>> SECTION: EDUCATION <<====-->
+          <section class="timeline education" id="education">
+
+            <!-- Margin (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /Margin -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height">
+              </div>              
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Education</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+
+			<!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content line-content-education">
+                  <!-- Graduation title -->
+                  <h3 class="section-item-title-1">PhD in Mechanical Reverse Engineering, Data Analysis and Computer Vision</h3>
+                  <!-- /Graduation title -->
+                  <!-- Graduation time -->
+                  <h4 class="graduation-time"><i class="fa fa-university"></i>University of Technology of Compiegne - <span class="graduation-date">Autumn 2015 - Autumn 2018 (Expected Graduation)</span></h4>
+                  <!-- /Graduation time -->
+                  <!-- content -->
+                  <div class="graduation-description">
+                    <p style="text-align: justify;text-justify: inter-word;">
+                    	<b>Thesis directors :</b> <a href="https://www.linkedin.com/pub/alexandre-durupt/58/bb9/743">Alexandre DURUPT</a> (<a href="http://www.utc.fr/~duruptal/">UTC</a>) and <a href="https://ch.linkedin.com/pub/dimitris-kiritsis/0/24/71/fr">Dimitris KIRITSIS</a> (<a href="http://people.epfl.ch/dimitris.kiritsis?lang=fr">EPFL</a>).<br>
+						<b>Co-Supervisor :</b> <a href="https://www.linkedin.com/in/matthieubricogne">Matthieu Bricogne</a> (<a href="http://www.utc.fr/~mbricogn/">UTC</a>)
+	                    <br><br>
+						<b>PhD Subject :</b> Heterogeneous Data Integration for Large Mechanical Assemblies' Digital MockUps in PLM Context.
+					</p>
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum -->
+            </div>
+            <!-- /SECTION ITEM -->
+			
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content line-content-education">
+                  <!-- Graduation title -->
+                  <h3 class="section-item-title-1">Engineering Master in Computer and Data Science</h3>
+                  <!-- /Graduation title -->
+                  <!-- Graduation time -->
+                  <h4 class="graduation-time"><i class="fa fa-university"></i>University of Technology of Compiegne - <span class="graduation-date">September 2010 - July 2015</span></h4>
+                  <!-- /Graduation time -->
+                  <!-- content -->
+                  <div class="graduation-description">
+                    <p style="text-align: justify;text-justify: inter-word;">
+                    	Since the end of High School, I’ve been studying at the <a href="https://www.utc.fr/formation_training/computer-science.php">UTC (Technical University of Compiegne)</a>.
+	                    <br><br>
+						Since September 2012 I have chosen my major in <b>Computer Sciences</b>.<br>
+						Finally in September 2013, I specialized my studies in the field of <b>Data Mining and Statistical Analysis</b>.
+					</p>
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum -->
+            </div>
+            <!-- /SECTION ITEM -->   
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content line-content-education">
+                  <!-- Graduation title -->
+                  <h3 class="section-item-title-1">TOEIC : 975/990</h3>
+                  <!-- /Graduation title -->
+                  <!-- Graduation time -->
+                  <h4 class="graduation-time"><i class="fa fa-university"></i>Test of English for International Communication - <span class="graduation-date">January 2015</span></h4>
+                  <!-- /Graduation time -->
+                  <!-- content -->
+                  <div class="graduation-description">
+                    <p style="text-align: justify;text-justify: inter-word;">
+                    	Developped and organized by the US-based company : <a href="https://www.etsglobal.org/Fr/Fre">ETS</a>, the TOEIC Listening and Reading Test is a two-hour multiple-choice test consisting of 200 questions evenly divided into listening comprehension and reading comprehension. Each candidate receives independent scores for listening and reading comprehension on a scale from 5 to 495 points. The total score adds up to a scale from 10 to 990 points.
+                    	<br><br>
+                    	<b>A Score of 975 corresponds to a C1 Level in the European Scale.</b>
+					</p>
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum -->
+            </div>
+            <!-- /SECTION ITEM -->   
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content line-content-education">
+                  <!-- Graduation title -->
+                  <h3 class="section-item-title-1">Erasmus in Hamburg</h3>
+                  <!-- /Graduation title -->
+                  <!-- Graduation time -->
+                  <h4 class="graduation-time"><i class="fa fa-university"></i> Technische Universität Hamburg Harburg - <span class="graduation-date">April 2014 to July 2014</span></h4>
+                  <!-- /Graduation time -->
+                  <!-- content -->
+                  <div class="graduation-description">
+                    <p style="text-align: justify;text-justify: inter-word;">
+                    	I have been studying for one semester at the well-known <a href="http://www.tuhh.de/alt/tuhh/startpage.html">Technische Universität Hamburg Harburg</a>.
+                    	<br><br>
+						I have taken courses relative to:
+						<b>
+						<ul style="margin-left:40px">
+							<li>Machine Learning</li>
+							<li>Data Mining</li>
+							<li>Architecture of Database Systems</li>
+							<li>Computer Security</li>
+							<li>Business Continuity: Application & Network Security</li>
+							<li>IT Security Risk Managemen</li>
+						</ul>
+						</b><br>
+						I’ve also followed a seminar related to the Security of <b>Brain-Computer-Interfaces</b>.
+
+                    </p>
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!--/Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->   
+
+             <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content line-content-education">
+                  <!-- Graduation title -->
+                  <h3 class="section-item-title-1">Erasmus in Vienna</h3>
+                  <!-- /Graduation title -->
+                  <!-- Graduation time -->
+                  <h4 class="graduation-time"><i class="fa fa-university"></i>Technische Universität Wien - <span class="graduation-date">February 2012 to June 2012</span></h4>
+                  <!-- /Graduation time -->
+                  <!-- content -->
+                  <div class="graduation-description">
+                    <p style="text-align: justify;text-justify: inter-word;">
+                    	I have been studying for one semester at the well-known <a href="http://www.tuhh.de/alt/tuhh/startpage.html">Technische Universität Hamburg Harburg</a>.
+                    	<br><br>
+						I have taken courses relative to:
+						<b>
+						<ul style="margin-left:40px">
+							<li>Object Oriented Programming</li>
+							<li>IT Security</li>
+							<li>Statistical Analisys</li>
+							<li>Mathematical Modeling</li>
+							<li>Database design</li>
+						</ul>
+						</b><br>
+						I’ve also followed a seminar related to the Security of <b>Brain-Computer-Interfaces</b>.
+                    </p>
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->       
+          </section>
+          <!-- ==>> /SECTION: EDUCATION <<==== -->  
+
+          <!-- ====>> SECTION: WORK EXPERIENCE <<====-->
+          <section class="timeline work-experience" id="works">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Work Experience</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+			
+			<!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content line-content-education">
+                  <!-- Work Place -->
+                  <h3 class="section-item-title-1"><a href="http://www.deltacad.fr/">DeltaCAD</a></h3>
+                  <!-- /work place -->
+                  <!-- Graduation time -->
+                  <h4 class="job"><i class="fa fa-flag"></i> Data Scientist and C++/Python Developer <span class="job-date">February 2015 - July 2015</span></h4>
+                  <!-- /Graduation time -->
+                  <!-- content -->
+                  <div class="job-description">
+                    <p style="text-align: justify;text-justify: inter-word;">
+                    	I have done a 6 months Internship inside the company DeltaCAD under the supervision of <a href="https://www.researchgate.net/profile/Harvey_Rowson">Harvey ROWSON</a>.</br></br>
+						I have designed and developed an application to perform mechanical parts recognition and segmentation. The C++ core is exposed via a Python Web API hosted on AWS (Amazon Cloud) <br><br>
+						For this sake, I have benchmarked the major learning alogirthm and and boosting techniques, combinated with a brief state of the art in geometrical feature recognition.
+					</p>
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->
+			
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content line-content-education">
+                  <!-- Work Place -->
+                  <h3 class="section-item-title-1"><a href="http://www.tedxutcompiegne.com/">TEDxUTCompiegne</a></h3>
+                  <!-- /work place -->
+                  <!-- Graduation time -->
+                  <h4 class="job"><i class="fa fa-flag"></i> Founder, Head of the Organization and TEDx Licence Owner - <span class="job-date">September 2014 - February 2015</span></h4>
+                  <!-- /Graduation time -->
+                  <!-- content -->
+                  <div class="job-description">
+                    <p style="text-align: justify;text-justify: inter-word;">
+                    	Nowadays an engineering student at the <a href="http://www.utc.fr/">UTC</a>, tomorrow the core of innovation and creativity. It's high time to act in order to shape the world and not just to cope with it. My engineering background relies not only on scientific topics but also on open-mindedness and assumption of responsibility. With the aim of bringing to the future engineers the keys to the great social and technological challenges, we have built <b>TEDxUTCompiegne</b>, and the first event took place on the <b>Tuesday January, 20th 2015</b>.
+                    	<br><br>
+                    	Photos : <a href="https://www.flickr.com/photos/129131048@N03/sets/72157650481514435/" target="_blank">Album Flickr</a><br>
+                    	Videos : <a href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rMgciAYrOqrzKmpL_sqyU_e" target="_blank">Playlist Youtube - TEDxUTCompiègne - January 20, 2015</a>
+                    	<br><br>
+                    	<b>Our thema : “Observing, Imaginating, Achieving”.</b>
+                    	<br><br>
+                    	Three actions verbs that together describe the innovation process. Three action verbs that reflect a willingness to act and understand. Three verbs that lead my way. No other thema could have transmit better my determination to engage myself in the social and technological challenges of tomorrow.
+                    	<br><br>
+                    	Speakers : 
+                    	<ul style="margin-left:40px">
+							<li><a href="https://fr.linkedin.com/pub/antoine-herlin/45/212/740">Antoine HERLIN</a> (<a href="http://www.cardiologs.com/">CardioLogs</a>)</li>
+							<li><a href="https://fr.linkedin.com/pub/jean-pascal-foucault/20/76b/521">Jean Pascal FOUCAULT</a> (<a href="http://www.tbmaestro.com/">tbmaestro</a>)</li>
+							<li><a href="https://fr.linkedin.com/pub/alexandre-durupt/58/bb9/743">Alexandre DURUPT</a> (<a href="http://dimexp.utc.fr">DiMEXP</a> et <a href="http://www.utc.fr">UTC</a>)</li>
+							<li><a href="https://fr.linkedin.com/pub/cécile-monteil/89/4b/76b/fr">Cecile MONTEIL</a> (<a href="http://www.adscientiam.fr/">Ad Scientiam</a>)</li>
+							<li><a href="https://twitter.com/samgoeta">Samuel GOËTA</a> (<a href="http://fr.okfn.org/">Open Knowledge F. France</a>)</li>
+							<li><a href="https://fr.linkedin.com/pub/jacques-pateau/15/391/16b">Jacques PATEAU</a> (<a href="http://www.pateauconsultants.com/">PateauConsultants</a>)</li>
+							<li><a href="https://fr.linkedin.com/in/jmlazard/fr">Jean Marc LAZARD</a> (<a href="http://www.opendatasoft.com/">OpenDataSoft</a>)</li>
+						</ul>
+                    	<br><br>
+
+                    	<b>My Work :</b><br>
+                    	During the project, I managed and coordinated a team of 13 people, set up the meeting agendas and the objectives.<br>
+                    	I actively participated in the Speakers selection process. I organized the team to meet the required deadlines and solved the logistical problems.
+                    	<br><br>
+                    	Feel free to ask me anything about this fantastic adventure.
+
+                    </p>
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content line-content-education">
+                  <!-- Work Place -->
+                  <h3 class="section-item-title-1"><a href="http://www.valeo.com/">Valeo</a></h3>
+                  <!-- /work place -->
+                  <!-- Graduation time -->
+                  <h4 class="job"><i class="fa fa-flag"></i> Business Automation Analyst - <span class="job-date">September 2013 - February 2014</span></h4>
+                  <!-- /Graduation time -->
+                  <!-- content -->
+                  <div class="job-description">
+                    <p style="text-align: justify;text-justify: inter-word;">
+                    	I have done a 6 months Internship inside the Information System Shared Service of Valeo Confort and Driving Assistance under the supervision of <a href="https://fr.linkedin.com/pub/marc-laurent/25/110/b43">Marc Laurent</a>.</br></br>
+						I have elaborate and maintained Business Workflow Applications in the Cloud Platform :<br><a href="http://www.opentext.com/">Cordys Process Factory</a>.<br><br>
+						In order to prepare a SAP migration, I have developed a tool to clean the data from the SD Module. The tool was a developed in VBA in Excel and performed a Statistical Analysis on clients’ data from our own system from to those in the global SAP system. The goal was to match the clients of the two systems and identify those who didn’t exist in the global system and needed to be created.
+                    </p>
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content line-content-education">
+                  <!-- Work Place -->
+                  <h3 class="section-item-title-1"><a href="http://www.erems.fr/">Erems</a></h3>
+                  <!-- /work place -->
+                  <!-- Graduation time -->
+                  <h4 class="job"><i class="fa fa-flag"></i> Web Developer - <span class="job-date">January 2013 - February 2013</span></h4>
+                  <!-- /Graduation time -->
+                  <!-- content -->
+                  <div class="job-description">
+                    <p style="text-align: justify;text-justify: inter-word;">
+                    	Front End developer of an administration tool.<br>
+						The goal was to allow long term planning of all the projects with color flagging for the different priorities.
+						The output is printed every week in PDF automatically generated. <br><br>
+						Language used : <b>Javascript / Jquery / PHP / HTML5 / CSS</b>
+                    </p>
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->  
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content line-content-education">
+                  <!-- Work Place -->
+                  <h3 class="section-item-title-1"><a href="http://www.telligo.fr/">Telligo</a></h3>
+                  <!-- /work place -->
+                  <!-- Graduation time -->
+                  <h4 class="job"><i class="fa fa-flag"></i> Holiday Camp Leader - <span class="job-date">Summer 2009 to Winter 2014</span></h4>
+                  <!-- /Graduation time -->
+                  <!-- content -->
+                  <div class="job-description">
+                    <p style="text-align: justify;text-justify: inter-word;">
+                    	Since I turned 17, I have worked as Holiday Camp Leader.<br><br>
+
+						The Holiday Camps were mainly Science Oriented and/or Sport Oriented.
+                    </p>
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->   
+          </section>
+          <!-- ==>> /SECTION: WORK EXPERIENCE <<==== --> 
+
+          <!-- ====>> SECTION: SKILLS <<====-->
+          <section class="timeline skills" id="skills">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
+              <!-- /VERTICAL MARGIN (necessary for the timeline effect) -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Skills</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- / Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1">Professional Skills</h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <ul class="skills-list">
+                    <!-- item-list -->
+                    <li>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" data-percent="70%" style="width: 70%;">
+                            <span class="sr-only">70% Complete</span>
+                        </div>
+                        <span class="progress-type">Comunication</span>
+                        <span class="progress-completed">70%</span>
+                      </div>
+                    </li>
+                    <!-- /item list -->
+                    <!-- item-list -->
+                    <li>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-2" role="progressbar" data-percent="90%" style="width: 90%;">
+                            <span class="sr-only">90% Complete</span>
+                        </div>
+                        <span class="progress-type">Leadership</span>
+                        <span class="progress-completed">90%</span>
+                      </div>
+                    </li>
+                    <!-- /item list -->
+                    <!-- item-list -->
+                    <li>
+                      <div class="progress" title="Doing my best!">
+                        <div class="progress-bar progress-bar-3" role="progressbar" data-percent="85%" style="width: 85%;">
+                            <span class="sr-only">85% Complete</span>
+                        </div>
+                        <span class="progress-type">Confidence</span>
+                        <span class="progress-completed">85%</span>
+                      </div>
+                    </li>
+                    <!-- /item list -->
+                  </ul>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->
+            
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1">Hard Skills</h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <ul class="skills-list">
+                    <!-- item-list -->
+                    <li>
+                      <div class="progress">
+                        <div class="progress-bar" data-percent="85%" role="progressbar" style="width: 85%;">
+                            <span class="sr-only">85% Complete</span>
+                        </div>
+                        <span class="progress-type">Data Modelisation and Analysis</span>
+                        <span class="progress-completed">85%</span>
+                      </div>
+                    </li>
+                    <!-- /item list -->
+					 <!-- item-list -->
+                    <li>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-2" data-percent="65%" role="progressbar" style="width: 65%;">
+                            <span class="sr-only">65% Complete</span>
+                        </div>
+                        <span class="progress-type">Software & API Design </span>
+                        <span class="progress-completed">65%</span>
+                      </div>
+                    </li>
+                    <!-- /item list -->
+					 <!-- item-list -->
+                    <li>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-3" data-percent="70%" role="progressbar" style="width: 70%;">
+                            <span class="sr-only">70% Complete</span>
+                        </div>
+                        <span class="progress-type">Network Security and Architecture</span>
+                        <span class="progress-completed">70%</span>
+                      </div>
+                    </li>
+                    <!-- /item list -->
+                  </ul>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->   
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- /Margin Collums (necessary for the timeline effect) -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1">Code Skills</h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <ul class="skills-list">
+                     <!-- item-list -->
+                    <li>
+                      <div class="progress">
+                        <div class="progress-bar" data-percent="80%" role="progressbar" style="width: 80%;">
+                            <span class="sr-only">80% Complete</span>
+                        </div>
+                        <span class="progress-type">Python</span>
+                        <span class="progress-completed">80%</span>
+                      </div>
+                    </li>
+                    <!-- /item list -->
+					 <!-- item-list -->
+                    <li>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-2" data-percent="85%" role="progressbar" style="width: 85%;">
+                            <span class="sr-only">85% Complete</span>
+                        </div>
+                        <span class="progress-type">C++</span>
+                        <span class="progress-completed">85%</span>
+                      </div>
+                    </li>
+                    <!-- /item list -->
+					 <!-- item-list -->
+                    <li>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-3" data-percent="65%" role="progressbar" style="width: 65%;">
+                            <span class="sr-only">65% Complete</span>
+                        </div>
+                        <span class="progress-type">R</span>
+                        <span class="progress-completed">65%</span>
+                      </div>
+                    </li>
+                    <!-- /item list -->
+					<!-- item-list -->
+                    <li>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-4" data-percent="85%" role="progressbar" style="width: 85%;">
+                            <span class="sr-only">85% Complete</span>
+                        </div>
+                        <span class="progress-type">SQL / PL SQL</span>
+                        <span class="progress-completed">85%</span>
+                      </div>
+                    </li>
+                    <!-- /item list -->
+					 <!-- item-list -->
+                    <li>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-5" data-percent="80%" role="progressbar" style="width: 80%;">
+                            <span class="sr-only">80% Complete</span>
+                        </div>
+                        <span class="progress-type">HTML / JS / PHP</span>
+                        <span class="progress-completed">80%</span>
+                      </div>
+                    </li>
+                    <!-- /item list -->
+                  </ul>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM --> 
+          </section>
+          <!-- ==>> /SECTION: SKILLS -->
+
+          <!-- ====>> SECTION: INTERESTS <<====-->
+          <section class="timeline" id="interests">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Interests</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1"><a href="http://www.ruskistudio.com/">Photography</a></h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <p style="text-align: justify;text-justify: inter-word;">
+                  	I run my own <b>Photo Business</b> <a href="http://www.ruskistudio.com/">RuskiStudio.com</a> during my spare time.<br><br>
+
+                  	I have a keen interest in:
+                  	<ul style="margin-left:40px; font-size:14px" >
+                  		<li>Concert Photography</li>
+                  		<li>Event Photography</li>
+                  		<li>Fashion Shoots</li>
+                  		<li>Nature Shots</li>
+                  		<li>Stock and Business Photography</li>
+                  		<li>Wedding Photography</li>
+                  	</ul>
+
+                  </p>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->
+            
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1">Cinema</h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <p style="text-align: justify;text-justify: inter-word;">
+	                  As a true fan of Cinema, I watch, at least, two movies a week. I especially appreciate the work of:
+	                  	<ul style="margin-left:40px; font-size:14px" >
+	                  		<li>Stanley Kubrick</li>
+	                  		<li>Quentin Tarantino</li>
+	                  		<li>Woody Allen</li>
+	                  		<li>Francis Ford Coppola</li>
+	                  		<li>Guy Ritchie</li>
+	                  		<li>James McTeigue</li>
+	                  		<li>Frank Darabont</li>
+	                  	</ul>
+                  </p>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->   
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1">Music</h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <p style="text-align: justify;text-justify: inter-word;">
+                  	It's been around 8 years that I've been introduced to the art of Turntablism and DJing.
+                  	<br><br>
+                  	I mainly listen to:
+                  		<ul style="margin-left:40px; font-size:14px" >
+	                  		<li>Techno</li>
+	                  		<li>Deep House</li>
+	                  		<li>Nu Jazz</li>
+	                  		<li>Jazz</li>
+	                  		<li>Nu Disco</li>
+	                  		<li>Funk</li>
+	                  		<li>80's Rock</li>
+	                  		<li>Reggae</li>
+	                  	</ul>
+                  </p>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM --> 
+          </section>
+          <!-- ==>> /SECTION: INTERESTS -->
+
+<?php 
+/*
+
+           <!-- ====>> SECTION: PORTFOLIO <<====-->
+          <section class="timeline portfolio" id="portfolio">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Portfólio</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1">Some Works</h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <div class="portfolio-itens clearfix">                      
+                    <!-- Portfolio item -->
+                    <div class="portfolio-item">
+                      <!-- Link to the item image (Put the long description on  "a" title)-->
+                      <a href="img/portfolio-item1-photo-zoom.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie purus." class="nivobox" data-lightbox-gallery="portfolio">
+                        <div class="hover">
+                          <p class="zoomi"><i class="fa fa-search"></i></p>
+                          <!-- Item short title -->
+                          <p class="portfolio-item-title"><strong>Some Place</strong><br/> Photography</p>
+                        </div>
+                        <div class="hover-bg-wrapper">
+                          <div class="hover-bg"></div>
+                        </div>
+                        <div class="portfolio-item-thumbnail">
+                          <!-- Thumbnail of the portfolio image (400x360 for retina display) -->
+                          <img src="img/portfolio-item1-photo-thumb.jpg" alt="">
+                        </div>                        
+                      </a>
+                    </div>
+                    <!-- /Portfolio item -->  
+
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- /Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->
+          </section>
+          <!-- ==>> /SECTION: PORTFOLIO -->
+
+*/
+?>
+
+        
+          <!-- ====>> SECTION: CONTACT <<====-->
+          <section class="timeline" id="contact">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION TITLE -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <!-- Section title -->
+                <h2 class="section-title">Keep in Touch</h2>
+                <!-- /Section title -->
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- / Margin Collum-->
+            </div>
+            <!-- /SECTION TITLE -->
+
+            <!-- SECTION ITEM -->
+            <div class="line row">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-mail "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content contact-content">
+                  <!-- Subtitle -->
+                  <h3 class="section-item-title-1">Shoot me a message</h3>
+                  <!-- /Subtitle -->
+                  <!-- content -->
+                  <div class="row">
+                    <div class="col-md-8 contact-form-wrapper">
+                      <!-- Contact form -->
+                      <form id="contactForm" method="post" class="form" role="form">
+                        <!-- Form Field -->
+                        <div class="form-group">
+                          <input class="form-control required" id="name" name="name" placeholder="Name" type="text" required />
+                        </div>
+                        <!-- /Form Field -->
+                        <!-- Form Field -->
+                        <div class="form-group">
+                          <input class="form-control required" id="email" name="email" placeholder="Email" type="email" required />
+                        </div>
+                        <!-- /Form Field -->
+                        <!-- Form Field -->
+                        <div class="form-group">
+                          <input class="form-control required" id="subject" type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <!-- /Form Field -->
+                        <!-- Form Field -->
+                        <div class="form-group">
+                          <textarea class="form-control required" id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                        </div>
+                        <!-- /Form Field -->
+                        <!-- Form Field -->
+                        <div class="form-group">
+                          <input type="submit" class="btn btn-default form-send" value="Send!">
+                        </div>  
+                        <!-- /Form Field -->
+                      </form>
+                      <!-- /Contact Form -->     
+                    </div>
+                    <!-- Contact infos -->                 
+                    <div class="col-md-4 contact-infos">
+                      <h4 class="contact-subtitle-1">Address</h4>
+                      <p>60200 Compiegne</p>
+                      <h4 class="contact-subtitle-1">Phone</h4>
+                      <p>(+33) 7 70 41 13 84</p>
+                      <h4 class="contact-subtitle-1">Mail</h4>
+                      <p>contact@jonathandekhtiar.eu</p>
+                    </div>
+                    <!-- /Contact infos --> 
+                  </div>
+                  <!-- /Content -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!--/ Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->            
+          </section>
+          <!-- ==>> /SECTION: CONTACT -->
+
+          <!-- ====>> SECTION: THANK YOU <<====-->
+          <section class="timeline profile-infos">
+
+            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+            <div class="line row timeline-margin timeline-margin-big">
+              <div class="content-wrap">
+                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                <div class="col-md-9 bg1 full-height"></div>
+              </div>
+            </div>
+            <!-- /VERTICAL MARGIN -->
+
+            <!-- SECTION ITEM -->
+            <div class="line row line-thank-you">
+              <!-- Margin Collums (necessary for the timeline effect) -->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+              <!-- /Margin Collums -->
+              <!-- Item Content -->
+              <div class="col-md-8 content-wrap bg1">
+                <div class="line-content">
+                  <!-- Subtitle -->
+                  <h3 class="thank-you">Thank You!</h3>
+                  <!-- /Subtitle -->
+                </div>
+              </div>
+              <!-- /Item Content -->
+              <!-- Margin Collum-->
+              <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+              <!-- / Margin Collum-->
+            </div>
+            <!-- /SECTION ITEM -->            
+          </section>
+          <!-- ==>> /SECTION: PROFILE INFOS -->
+        </div>
+      </div>
+      <!-- ============  /TIMELINE ================= -->
+
+      <!-- ============  FOOTER ================= -->
+      <footer id="footer" class="row">
+        <!-- Put your Quote Here-->
+        <p class="quote">“Now I know, I know we NEVER know!”</p>
+        <!-- /Quote -->
+        <!-- Quote Autor -->
+        <p class="author">Jean GABIN</p>
+        <!-- /Quote Autor -->
+      </footer>
+      <!-- ============  /FOOTER ================= -->
+    </div> 
+  </div> 
+</section>
+<!-- /CONTENT
+========================================================= -->
+
+<!-- Contact Form - Ajax Messages
+========================================================= -->
+<!-- Form Sucess -->
+<div class="form-result modal-wrap" id="contactSuccess">
+  <div class="modal-bg"></div>
+  <div class="modal-content">
+    <h4 class="modal-title"><i class="fa fa-check-circle"></i> Success!</h4>
+    <p>Your message has been sent to us.</p>
+  </div>
+</div>
+<!-- /Form Sucess -->
+<!-- form-error -->
+<div class="form-result modal-wrap" id="contactError">
+  <div class="modal-bg"></div>
+  <div class="modal-content">
+    <h4 class="modal-title"><i class="fa fa-times"></i> Error</h4>
+    <p>There was an error sending your message.</p>
+  </div>
+</div>
+<!-- /form-error -->
+
+<!-- Contact Form - Ajax Messages
+========================================================= -->
+
+<!-- Javascript Files
+========================================================= -->
+<!-- jQuery (necessary for plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- /jquery -->
+<!-- bootstrap -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- /bootstrap -->
+<!-- easing -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- /easing -->
+<!-- jQuery Mousewheel -->
+<script src="vendor/jquery.mousewheel.min.js"></script>
+<!-- /jQuery Mousewheel -->
+<!-- jQuery Mousewheel Smoothscroll -->
+<script src="vendor/jquery.nicescroll.min.js"></script>
+<script src="vendor/jquery.nicescroll.plus.js"></script>
+<!-- /jQuery Mousewheel Smoothscroll -->
+<!-- Waypoints (for CSS3 animations) -->
+<script src="vendor/waypoints.min.js"></script>
+<!-- /waypoints -->
+<!-- Modal box-->
+<script src="vendor/nivo-lightbox/nivo-lightbox.min.js"></script>
+<!-- /Modal Box -->
+<!-- Carousel-->
+<script src="vendor/jquery.bxslider.min.js"></script>
+<!-- /Carousel -->
+<!-- Front-end Validator (for forms) -->
+<script src="vendor/jquery.validate.min.js"></script>
+<!-- /Front-end Validator -->
+<!-- placeholder Support for IE -->
+<script src="vendor/placeholders.jquery.min.js"></script>
+<!-- /placeholder support -->
+<!-- Cross-browser -->
+<script src="js/cross-browser.js"></script>
+<!-- /Cross-browser -->
+<!-- Configurations -->
+<script src="js/main.js"></script>
+<!-- /Configurations -->
 </body>
-</html>
+</html>>
