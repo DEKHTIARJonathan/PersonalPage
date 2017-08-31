@@ -1,155 +1,262 @@
-//Strict Mode 
-(function($) {
-  "use strict";
+/*
 
-//Run on Document Ready
-$(document).ready(function(){  
+[Master JS File (Unminified) : MAIN.JS]
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
 
-  //Smooth scrool
-  $("html").niceScroll({styler:"fb",cursorcolor:"#000"});
+ * Dyon - Simple vCard Resume Template from Themesit
+ * Author: Themesit, http://www.themesit.com
+ * Copyright (C) 2017 Themesit
+ * This is a premium product. For licensing queries please contact appshowy@gmail.com
+ */
 
-  //Side menu - Open
-  $('.side-menu-open').mouseenter(function(){
-    $('.side-menu').animate({'left': '0px'}, 600, 'easeOutCubic');
-  });
+$( document ).ready(function() {
+    "use strict"; // Start of use strict
 
-  //Side menu - Close
-  $('#side-menu-close').click(function(){
-    var sideWidth = $('.side-menu').outerWidth();
-    var sideWidthClose = '-' + sideWidth + 'px';
-    $('.side-menu').animate({'left': sideWidthClose}, 600, 'easeOutCubic');
-    preventDefault();
-  });
+        /** Loader */
+    var loader = $('.loader');
+    var i = 0;
 
-  //Smooth Scroll on anchor links
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 700, 'easeInOutExpo');
-        return false;
-      }
+    /*Center loader on half screen */
+    loader.css({
+        top: 'calc(50vh - 2px)',
+        left: 'calc(50vw - 200px)'
+    })
+
+    do {
+        loader.animate({
+            width: i
+        }, 10)
+        i += 3;
+    } while (i <= 400)
+
+    // expand the loading bar
+    loader.animate({
+        left: 0,
+        width: '100vw'
+    })
+
+    // Make it full screen
+    loader.animate({
+        top: 0,
+        height: '100vh'
+    })
+
+    // This line hide loader and show content
+    setTimeout(function() {
+        $('.loader-wrapper').fadeOut("fast");
+        (loader).fadeOut("fast");
+        // Set time in milisec
+    }, 3000);
+
+    //Adjusting Intro Components Spacing based on detected screen resolution
+    $('.fullwidth').css('width', '100vw');
+    $('.fullheight').css('height', '100vh');
+    $('.halfwidth').css('width', 'calc(100vw / 2)');
+    $('.halfheight').css('height', 'calc(100vh / 2)');
+
+    /** Common UX/UI */
+    if ($("#works-container").length) {
+            $(".works-filter-wrap").fadeIn(3000);
     }
-  });
 
-  //Bootstrap Scroll Spy
-  $('[data-spy="scroll"]').each(function () {
-    var $spy = $(this).scrollspy('refresh');
-  });  
+    /** Main Navigation Trigger */
+    $('.goto-right').on('click', function() {
+            $('body').toggleClass('open-right');
+    });
 
-  //Bxslider -see options at http://bxslider.com/
-  $('.portfolio-itens').bxSlider({
-      slideWidth: 200,
-      minSlides: 1,
-      maxSlides: 4,
-      moveSlides: 1,
-      slideMargin: 5,
-      auto: false,
-      mode: 'horizontal',
-      useCSS: false,
-      speed: 900,
-      infiniteLoop: false,
-      hideControlOnEnd: true,
-      easing: 'easeOutElastic',
-      pager: false,
-      prevText: '<i class="fa fa-chevron-left"></i>',
-      nextText: '<i class="fa fa-chevron-right"></i>'
-  });
+    $('.goto-left').on('click', function() {
+            $('body').toggleClass('open-left');
+    });
 
-  
-  //Nivo Lightbox
-  $('a.nivobox').nivoLightbox({ effect: 'fade' });
+    /** Animation on scroll */
+    function elementInView() {
+            var $animatedElements = $(".anim");
+            var $window = $(window);
 
-  //Portfolio Animations
-  $('.portfolio-item').hover(function(){
-    $(this).find('.hover-bg-wrapper').fadeIn(200);
-    $(this).find('.hover').show();  
-    $(this).find('p').addClass('animated').addClass('fadeInUp');
-  }, function(){
-    $(this).find('.hover-bg-wrapper').fadeOut(200);
-    $(this).find('.hover').fadeOut(200);
-    $(this).find('p').removeClass('fadeInUp');
-  });
+            $window.on('scroll resize', function() {
+                    var windowHeight = $window.height();
+                    var windowTopPosition = $window.scrollTop();
+                    var windowBottPosition = (windowTopPosition + windowHeight);
 
-  //Contact Form Validator and Ajax Sender
-  $("#contactForm").validate({
-    submitHandler: function(form) {
-      $.ajax({
-        type: "POST",
-        url: "php/contact-form.php",
-        data: {
-          "name": $("#contactForm #name").val(),
-          "email": $("#contactForm #email").val(),
-          "subject": $("#contactForm #subject").val(),
-          "message": $("#contactForm #message").val()
-        },
-        dataType: "json",
-        success: function (data) {
-          if (data.response == "success") {
-            $("#contactSuccess").fadeIn(300);
-            $("#contactError").addClass("hidden");
+                    $.each($animatedElements, function() {
+                            var $element = $(this);
+                            var elementHeight = $element.outerHeight();
+                            var elementTopPosition = $element.offset().top;
+                            var elementBottPosition = (elementTopPosition + elementHeight);
 
-            $("#contactForm #name, #contactForm #email, #contactForm #subject, #contactForm #message")
-              .val("")
-              .blur()
-              .closest(".control-group")
-              .removeClass("success")
-              .removeClass("error");              
+                            // Check to see if this current container is within viewport
+                            if ((elementBottPosition >= windowTopPosition) &&
+                                    (elementTopPosition <= windowBottPosition)) {
+                                    $element.addClass('animated');
+                                    //$element.removeClass('anim');
+
+                                    // Animate progress bar
+                                    if ($element.hasClass('progress-bar')) {
+                                            $element.css('width', $element.attr('data-percent') + '%');
+                                    }
+
+                            }
+                            //else {
+                            //$element.removeClass('animated');
+                            //}
+                    });
+            });
+
+            $window.trigger('scroll');
+
+    }
+
+    $(document).ready(function() {
+
+            /** Animation on scroll */
+            elementInView();
+
+            /** Background Image */
+            $('.bg-image').each(function() {
+                    var $imgPath = $(this).attr("data-image");
+                    $(this).css('background-image', 'url(' + $imgPath + ')');
+            });
+
+            /** Responsive video embed */
+            $(".project-video").fitVids();
+
+            /** Typed.js (Text typing effect) */
+            $('.typed').typed({
+                    stringsElement: $('.typed-strings'),
+                    loop: true,
+                    backDelay: 2500,
+                    cursorChar: "_"
+            });
             
-          } else {
-            $("#contactError").fadeIn(300);
-            $("#contactSuccess").addClass("hidden");
-          }
-        }
+            /*
+            // LightGallery init start 
+            $('#works-container').lightGallery({
+                    showThumbByDefault: false,
+                    hash: false
+            });
+            */
 
-      });
-    }
-  });
+            /** Testimonial carousel */
+            $(".testimonial-carousel").owlCarousel({
+                    autoWidth: false,
+                    autoHeight: false,
+                    items: 1,
+                    loop: true,
+                    nav: false,
+                    dots: false,
+                    navText: false,
+            });
 
-  //Modal for Contact Form
-  $('.modal-wrap').click(function(){
-    $('.modal-wrap').fadeOut(300);
-  });      
+            /** Client carousel */
+            $(".client-carousel").owlCarousel({
+                    autoWidth: false,
+                    autoHeight: false,
+                    items: 3,
+                    margin: 30,
+                    loop: true,
+                    nav: false,
+                    dots: false,
+                    navText: false,
+                    responsive: {
+                            0: {
+                                    items: 1
+                            },
+                            600: {
+                                    items: 2
+                            },
+                            1000: {
+                                    items: 3
+                            },
+                            1600: {
+                                    items: 5
+                            }
+                    }
+            });
 
-  //Background Height fix for vertical progress
-  $( ".full-height" ).each(function() {
-    var $stretch = $(this);
-    $stretch.css({ height: $stretch.closest('.line').find('.content-wrap').height() });
-  }); 
+    });
+
+        //ISOTOPE
+    //ISOTOPE GLOBALS
+    var $container1 = $('.works-container');
+
+    //ISOTOPE INIT
+    $(window).load(function() {
+
+            //checking if all images are loaded
+            $container1.imagesLoaded(function() {
+
+                    //init isotope once all images are loaded
+                    $container1.isotope({
+                            // options
+                            itemSelector: '.works-item',
+                            layoutMode: 'masonry',
+                            transitionDuration: '0.8s'
+                    });
+
+                    //forcing a perfect masonry layout after initial load
+                    setTimeout(function() {
+                            $container1.isotope('layout');
+                    }, 500);
+
+                    // triggering filtering
+                    $('.works-filter li a').on('click', function() {
+                            $('.works-filter li a').removeClass('active');
+                            $(this).addClass('active');
+
+                            var selector = $(this).attr('data-filter');
+                            $('.works-container').isotope({
+                                    filter: selector
+                            });
+                            setTimeout(function() {
+                                    $container1.isotope('layout');
+                            }, 700);
+                            return false;
+                    });
+
+                    //Isotope ReLayout on Window Resize event.
+                    $(window).on('resize', function() {
+                            $container1.isotope('layout');
+                    });
+
+                    //Isotope ReLayout on device orientation changes
+                    window.addEventListener("orientationchange", function() {
+                            $container1.isotope('layout');
+                    }, false);
+
+            });
+
+    });
+
+    /** Contact Form */
+    $(".contact-form").on('submit', function(e) {
+            e.preventDefault();
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var subject = "Contact form submitted by " + name;
+            var message = $("#message").val();
+            var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message;
+
+            function isValidEmail(emailAddress) {
+                    var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+                    return pattern.test(emailAddress);
+            };
+
+            if (isValidEmail(email) && (message.length > 1) && (name.length > 1)) {
+                    $.ajax({
+                            type: 'POST',
+                            url: 'php/contact.php',
+                            data: dataString,
+                            success: function() {
+                                    $(".success").fadeIn(1000);
+                                    $(".error").fadeOut(500);
+                            }
+                    });
+            } else {
+                    $(".error").fadeIn(1000);
+                    $(".success").fadeOut(500);
+            }
+
+            return false;
+    });
 
 });
-
-//Run on Window Load
-$(window).load(function(){
-  //Page loader
-  $('#page-loader').fadeOut(200, function(){});
-
-  //Safari Crossbrowser animation Fix
-  if ($('html').hasClass('safari')) {
-      $('#content-body').removeClass('animated');
-  }
-
-  //Fade In load
-  $('#content-body').addClass('fadeInUp');
-
-  //Background Height fix for vertical progress
-  setTimeout(function () {    
-      $( ".full-height" ).each(function() {
-        var $stretch = $(this);
-        $stretch.css({ height: $stretch.closest('.line').find('.content-wrap').outerHeight() });
-      });  
-    }, 300
-  );
-  
-  //Background Height fix for vertical progress on window resize
-  $(window).resize(function(){ 
-     $( ".full-height" ).each(function() {
-      var $stretch = $(this);
-      $stretch.css({ height: $stretch.closest('.line').find('.content-wrap').outerHeight() });
-    }); 
-  });
-});
-})(jQuery);
